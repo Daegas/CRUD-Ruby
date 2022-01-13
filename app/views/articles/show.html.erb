@@ -1,8 +1,14 @@
+<div class="large-container center-block">
 <h1> <%=@article.title%> </h1>
+<div>
+    Escrito por: <strong> <%= @article.user.email%></strong>
+</div>
+
 <div>
     <%= @article.content%>
 </div>
 
 <div>
 <%=link_to "Eliminar articulo", @article, method: :delete %>
+</div>
 </div>
